@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fuel Prices</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .pricesectioncontainer {
+        height: 150vh;
+        width: 100%;
+        overflow: hidden;
+      }
+      .pricesection {
+        min-height: 340vh;
+        width: 100%;
+        transform: translateY(-190vh);
+      }
+
+      @media (max-width: 500px) and (min-width: 400px) {
+        .pricesectioncontainer {
+            height: 270vh;
+        }
+
+        .pricesection {
+          width: 100%;
+          transform: translateY(-160vh);
+          height: 550vh;
+        }
+
+      }
+      @media (max-width: 400px) and (min-width: 325px) {
+        .pricesectioncontainer {
+            height: 270vh;
+        }
+
+        .pricesection {
+          width: 100%;
+          transform: translateY(-178vh);
+          height: 550vh;
+        }
+      }
+
+      @media (max-width: 320px) and (min-width: 300px) {
+        .pricesectioncontainer {
+            height: 375vh;
+        }
+
+        .pricesection {
+          width: 100%;
+          transform: translateY(-195vh);
+          height: 650vh;
+        }
+      }
+
+      @media (max-width: 761px) and (min-width: 500px) {
+        .pricesectioncontainer {
+            height: 270vh;
+        }
+
+        .pricesection {
+          width: 100%;
+          transform: translateY(-150vh);
+          height: 650vh;
+        }
+      }
+      @media (max-width: 1100px) and (min-width: 761px) {
+        .pricesectioncontainer {
+            height: 310vh;
+        }
+
+        .pricesection {
+          width: 100%;
+          transform: translateY(-180vh);
+          height: 650vh;
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 flex justify-center items-center">
+    <!-- Container -->
+    <div class="container p-0 lg:p-6 bg-white ">
+      <!-- Header -->
+
+      <!-- iFrame Section -->
+      <div class="w-full rounded-lg shadow-lg pricesectioncontainer">
+        <iframe
+          class="pricesection"
+          src="https://iocl.com/petrol-diesel-price"
+          scrolling="no"
+          frameborder="0"
+        ></iframe>
+      </div>
+    </div>
+  </body>
+</html>
